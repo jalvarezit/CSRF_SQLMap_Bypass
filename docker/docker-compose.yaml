@@ -5,7 +5,9 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: my_secret_pw_shh
-      MYSQL_DATABASE: posts
+      MYSQL_DATABASE: mall
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d
   web:
     build: .
     container_name: php_web
@@ -14,8 +16,6 @@ services:
     ports:
       - "80:80"
     stdin_open: true
-    volumes:
-      - "./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql"
     links: 
       - database
     tty: true
