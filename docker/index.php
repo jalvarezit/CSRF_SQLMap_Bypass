@@ -58,7 +58,7 @@ $_SESSION["token"] = md5(uniqid(mt_rand(), true));
 						</div>
 						<div class="field">
 							<label>CSRF Token</label>
-							<input name="csrf" id="csrf" value="<?php echo $_SESSION["token"] ?>" />
+							<input readonly name="csrf" id="csrf" value="<?php echo $_SESSION["token"] ?>" />
 						</div>
 						<button class="ui button" type="submit">Submit</button>
 					</form>
