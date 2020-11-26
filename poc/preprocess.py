@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# sqlmap -u "http://rootkit.es/ard/process.php?action=foo" --method GET --preprocess sample.py --batch --cookie="PHPSESSID=1hvr53vt6j8b50p8ii4s6660iv" --dbs
+# sqlmap -u "http//localhost/index.php?action=foo" --method GET --preprocess preprocess.py --dbs --batch 
 
 import requests
 from http.cookies import SimpleCookie
