@@ -14,7 +14,7 @@ Run the following sqlmap command:
 sqlmap -u "http://localhost/index.php?action=0" --method GET --preprocess ./poc/preprocess.py --batch --dbs
 ```
 
-There is a more in depth writeup in my [blog]().
+There is a more in depth writeup in my [blog](https://itasahobby.gitlab.io/posts/sqlmapcsrf/).
 ### Mentions
 
 Idea inspired by [**Dreg**](https://github.com/David-Reguera-Garcia-Dreg/) 
